@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Rock Paper Scissors</h1>
+    <h2 class="round">Round <span id="roundNumber">1</span></h2>
+    <div class="players">
+        <div class="player">
+            <div class="scores">
+               <p>You: <span id="playerScore">0</span></p> 
+            </div>
+            <div class="playerSelection">
+                <i id="playerchoice"></i>  
+            </div>
+        </div>
+        <h2 id="result">Begin</h2>
+        <div class="player">
+            <div class="scores">
+               <p>Computer: <span id="compScore">0</span></p> 
+            </div>
+            <div class="playerSelection">
+                <i></i>
+            </div>
+        </div>
+    </div>
+    <div class="play">
+        <h2>Make your choice</h2>
+        <div class="choices">
+            <button class="fas fa-hand-rock" id="rock"></button>
+            <button class="fas fa-hand-paper" id="paper"></button>
+            <button class="fas fa-hand-scissors" id="scissors"></button>
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>
