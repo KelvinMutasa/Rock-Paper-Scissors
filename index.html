@@ -16,7 +16,7 @@
                <p>You: <span id="playerScore">0</span></p> 
             </div>
             <div class="playerSelection">
-                <i id="playerchoice"></i>  
+                <i id="playerChoice"></i>  
             </div>
         </div>
         <h2 id="result">Begin</h2>
@@ -25,7 +25,7 @@
                <p>Computer: <span id="compScore">0</span></p> 
             </div>
             <div class="playerSelection">
-                <i></i>
+                <i id="compChoice"></i>
             </div>
         </div>
     </div>
@@ -36,6 +36,13 @@
             <button class="fas fa-hand-paper" id="paper"></button>
             <button class="fas fa-hand-scissors" id="scissors"></button>
         </div>
+    </div>
+
+    <div class="endGame">
+        <h2>Game Over</h2>
+        <h3 id="winner"></h3>
+        <button>Play Again</button>
+
     </div>
     <script src="/script.js"></script>
 </body>
