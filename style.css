@@ -133,7 +133,7 @@ body .play .choices button {
 body .play .choices :hover {
   transform: scale(1.3);
 }
-body .endGame {
+body .pop {
   position: absolute;
   background-color: rgba(40, 40, 42, 0.9843137255);
   text-align: center;
@@ -146,7 +146,7 @@ body .endGame {
   color: #f4f4f8;
   display: none;
 }
-body .endGame button {
+body .pop button {
   background: #5f6062;
   margin-top: 5%;
   border-radius: 10px;
