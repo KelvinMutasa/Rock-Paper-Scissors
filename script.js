@@ -60,22 +60,16 @@ let game = () => {
 }
 
 let roundIncrease = () => {
-    if (roundNumber <= 9){
-        roundNumber++;
-        round.innerHTML = roundNumber;
+    if (roundNumber > 9){
+        
+        endGame();
+
     }
     else {
 
-
-        endGame();
-
-        restart.addEventListener("click", (e) => {
-            pop.style.display="none";
-            roundNumber=1;
-            round.innerHTML = roundNumber;
-            playerScore = 0;
-            compScore = 0;
-        });
+        
+        roundNumber++;
+        round.innerHTML = roundNumber;
         
     }
 };
@@ -83,17 +77,28 @@ let roundIncrease = () => {
 let endGame = () => {
     pop.style.display = "block";
     
-    if (plyerScore>computerScore){
+    if (playerScore>compScore){
 
         champion.innerHTML = "You Win";
     }
-    else if (computerScore>plyerScore){
-        champion.innerHTML = "You Lose";
+    else if (compScore==playerScore){
+        champion.innerHTML = "It's a Tie";
     }
     else {
-        champion.innerHTML = "It's a Tie";
+        champion.innerHTML = "You Lose";
     }
 
     
 };
+restart.addEventListener("click", () => {  /*fire function from button*/
+    pop.style.display="none";
+    roundNumber=1;
+    round.innerHTML = roundNumber;
+    playerScore=0;
+    plyerScore.innerHTML=playerScore;
+    compScore = 0;
+    computerScore.innerHTML = compScore;
+
+});
+
 game();
